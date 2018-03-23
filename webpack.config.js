@@ -82,4 +82,7 @@ module.exports = {
 		],
 	},
 	devtool: IS_DEV ? "source-maps" : false,
+	devServer: {
+		historyApiFallback: true
+	}
 };

@@ -7,6 +7,8 @@ import "./style.css";
 
 window.THREE = THREE;
 
+const findGameId = /(?:\/)(.+)\/?$/g;
+
 let game = new Game();
 let client = new Client(game);
 document.getElementById("game").appendChild(client.canvas);
@@ -24,7 +26,7 @@ socket.on("connect", () => {
 		color: query.color || Math.round(Math.random() * 360),
 	};
 
-	let gameID = location.pathname.split("/")[2];
+	let gameID = findGameId.exec(location.pathname)[1];
 	socket.emit(
 		"join-game",
 		{

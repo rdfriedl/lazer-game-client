@@ -122,7 +122,7 @@ export default class Client {
 
 		if (this.players.localPlayerModel) {
 			// update the camera
-			let pos = this.players.localPlayerModel.getWorldPosition();
+			let pos = this.players.localPlayerModel.getWorldPosition(new THREE.Vector3);
 			this.camera.position.copy(pos).add(CAMERA_OFFSET);
 			this.camera.lookAt(pos);
 
