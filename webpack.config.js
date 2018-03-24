@@ -12,7 +12,10 @@ module.exports = {
 	},
 	plugins: [
 		new Dotenv(),
-		new webpack.EnvironmentPlugin(["NODE_ENV"]),
+		new webpack.EnvironmentPlugin({
+			NODE_ENV: 'development',
+			SERVER_ADDRESS: null
+		}),
 		new LodashModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			template: "src/index.ejs",
