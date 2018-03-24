@@ -14,7 +14,7 @@
     "format": "prettier --write ./**/*.{js,json,css,md}"
   },
   "dependencies": {
-    "lazer-game-core": "^1.0.1",
+    "lazer-game-core": "^1.0.3",
     "lodash": "^4.17.5",
     "p2": "^0.7.1",
     "regexp-events": "^1.0.2",
