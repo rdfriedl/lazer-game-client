@@ -43,7 +43,10 @@ module.exports = {
 			},
 			{
 				test: /\.js$/,
-				exclude: /node_modules/,
+				exclude: [
+					/node_modules/,
+					/lazer-game-core/
+				],
 				loader: "babel-loader",
 				options: {
 					cacheDirectory: true,
