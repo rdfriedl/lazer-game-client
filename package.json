@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "lazer-game-core": "^1.0.4",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "p2": "^0.7.1",
     "regexp-events": "^1.0.2",
     "shortid": "^2.2.8",
